@@ -2,11 +2,11 @@
 #
 # a) Creating a new prelease when you push a new tag with a "v" prefix (version).
 #
-#    This type of prerelease is meant to be used for production: alpha, beta, rc, etc. types of releases.
-#    After the prerelease is created, you need to make your changes on the release page at the relevant
+#    This type of pre-release is meant to be used for production: alpha, beta, rc, etc. types of releases.
+#    After the pre-release is created, you need to make your changes on the release page at the relevant
 #    Github page and publish your release.
 #
-# b) Creating/updating the "latest" prerelease when you push to your default branch.
+# b) Creating/updating the "latest" pre-release when you push to your default branch.
 #
 #    This type of prelease is useful to make your bleeding-edge binaries available to advanced users.
 #
@@ -48,6 +48,6 @@ jobs:
         with:
           tag_name: ${{ steps.vars.outputs.tag_name }}
           files: release/*
-          prerelease: true
+          pre-release: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
